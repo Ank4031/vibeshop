@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function currency(n) {
-  return n.toLocaleString(undefined, { style: "currency", currency: "USD" });
+  return n.toLocaleString(undefined, { style: "currency", currency: "INR" });
 }
 
 export default function CheckoutPage() {
@@ -33,7 +33,7 @@ export default function CheckoutPage() {
   }, []);
 
   const handlePlaceOrder = () => {
-    alert(`Order placed! Total: ${currency(checkoutData.cartTotal)}`);
+  alert(`Order placed! Total: ${currency(checkoutData.cartTotal)}`);
     navigate("/"); // navigate back to home
   };
 
@@ -90,8 +90,7 @@ export default function CheckoutPage() {
                     <div>
                       <div className="font-medium">{item.product?.name || "Unnamed Product"}</div>
                       <div className="text-gray-500 text-sm">
-                        {currency(item.product?.price || 0)} × {item.quantity} ={" "}
-                        {currency(item.itemTotal)}
+                        {currency(item.product?.price || 0)} × {item.quantity} = {currency(item.itemTotal)}
                       </div>
                     </div>
                   </div>

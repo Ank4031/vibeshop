@@ -2,7 +2,7 @@ import React, { useReducer, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function currency(n) {
-  return n.toLocaleString(undefined, { style: "currency", currency: "USD" });
+  return n.toLocaleString(undefined, { style: "currency", currency: "INR" });
 }
 
 function cartReducer(state, action) {
@@ -112,7 +112,7 @@ function ProductCard({ product, onAdd }) {
       <h3 className="font-semibold text-lg">{product.name}</h3>
       <p className="text-sm text-gray-500 flex-1 mt-2">{product.description}</p>
       <div className="mt-4 flex items-center justify-between">
-        <div className="text-xl font-bold">{currency(product.price)}</div>
+  <div className="text-xl font-bold">{currency(product.price)}</div>
       </div>
 
       <div className="mt-3 flex items-center justify-between">
