@@ -2,6 +2,16 @@
 
 A full-stack e-commerce demo built with React (frontend) and Node.js/Express + MongoDB (backend).
 
+## Desktop page
+<img width="252" height="153" alt="Screenshot 2025-11-07 184214" src="https://github.com/user-attachments/assets/25ccf7b0-0bd5-4089-9397-4f33ee5faf76" />
+
+## Cart Information
+<img width="259" height="135" alt="Screenshot 2025-11-07 184223" src="https://github.com/user-attachments/assets/550e5bb7-2c48-401d-97e1-012e8255011c" />
+
+## Ckeckout page
+<img width="209" height="150" alt="Screenshot 2025-11-07 184231" src="https://github.com/user-attachments/assets/8dab64df-8a4e-4c22-b2e4-91340dbbd597" />
+
+
 ## Features
 - Product listing and search
 - Add to cart, remove from cart, update quantity
